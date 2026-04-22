@@ -36,7 +36,7 @@ export default function About() {
             />
           </div>
 
-          <div className="absolute -left-4 top-8 rounded-2xl bg-primary px-6 py-5 text-white shadow-[0_12px_40px_rgba(74,124,46,0.35)] lg:-left-8">
+          <div className="absolute -left-4 top-8 rounded-2xl bg-primary px-6 py-5 text-white shadow-[0_12px_40px_rgba(107,142,61,0.35)] lg:-left-8">
             <div className="font-serif text-5xl font-bold leading-none">25+</div>
             <div className="mt-1 text-xs font-semibold uppercase tracking-wider text-white/85">
               Years of<br />Experience

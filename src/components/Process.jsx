@@ -47,7 +47,7 @@ export default function Process() {
           <ol className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
             {STEPS.map((s) => (
               <li key={s.n} className="relative text-center">
-                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-primary font-serif text-2xl font-bold text-white shadow-[0_10px_30px_rgba(74,124,46,0.3)] ring-8 ring-white">
+                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-primary font-serif text-2xl font-bold text-white shadow-[0_10px_30px_rgba(107,142,61,0.3)] ring-8 ring-white">
                   {s.n}
                 </div>
                 <h3 className="mt-6 text-xl font-semibold">{s.title}</h3>

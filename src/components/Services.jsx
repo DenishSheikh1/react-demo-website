@@ -62,7 +62,7 @@ export default function Services() {
           {SERVICES.map((s) => (
             <article
               key={s.title}
-              className="group relative rounded-3xl border border-gray-100 bg-white p-8 shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_20px_50px_rgba(74,124,46,0.12)]"
+              className="group relative rounded-3xl border border-gray-100 bg-white p-8 shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_20px_50px_rgba(107,142,61,0.12)]"
             >
               <IconFrame path={s.icon} />
               <h3 className="mt-6 text-xl font-semibold">{s.title}</h3>

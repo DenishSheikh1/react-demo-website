@@ -1,20 +1,21 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-primary: #4a7c2e;
-  --color-primary-dark: #365a1f;
-  --color-primary-light: #6aa347;
-  --color-accent: #8bc34a;
-  --color-cream: #f5f1e8;
-  --color-cream-dark: #ece6d3;
-  --color-ink: #1a2e1a;
-  --color-ink-soft: #2d4a2d;
+  /* Olive-forest green primary with warm cream + dark ink — tuned for landscaping theme */
+  --color-primary: #6b8e3d;
+  --color-primary-dark: #4e6b29;
+  --color-primary-light: #8fae5a;
+  --color-accent: #c6d84c;
+  --color-cream: #f4eee0;
+  --color-cream-dark: #ebe3cf;
+  --color-ink: #1f2a1a;
+  --color-ink-soft: #34412c;
 
   --font-serif: 'Playfair Display', 'Georgia', serif;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 
   --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.06);
-  --shadow-card: 0 12px 40px rgba(26, 46, 26, 0.1);
+  --shadow-card: 0 12px 40px rgba(31, 42, 26, 0.1);
 }
 
 html {
