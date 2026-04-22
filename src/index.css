@@ -1,58 +1,35 @@
-:root,
-:root[data-theme='light'] {
-  --text: #57546a;
-  --text-h: #0b0914;
-  --bg: #ffffff;
-  --border: #e5e4e7;
-  --code-bg: #f7f6f2;
-  --accent: #7c3aed;
-  --accent-bg: rgba(124, 58, 237, 0.1);
-  --accent-border: rgba(124, 58, 237, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.08) 0 10px 20px -4px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+@import 'tailwindcss';
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, 'JetBrains Mono', Consolas, monospace;
+@theme {
+  --color-primary: #4a7c2e;
+  --color-primary-dark: #365a1f;
+  --color-primary-light: #6aa347;
+  --color-accent: #8bc34a;
+  --color-cream: #f5f1e8;
+  --color-cream-dark: #ece6d3;
+  --color-ink: #1a2e1a;
+  --color-ink-soft: #2d4a2d;
 
-  font: 16px/1.5 var(--sans);
-  color: var(--text);
-  background: var(--bg);
-  color-scheme: light dark;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --font-serif: 'Playfair Display', 'Georgia', serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.06);
+  --shadow-card: 0 12px 40px rgba(26, 46, 26, 0.1);
 }
 
-:root[data-theme='dark'] {
-  --text: #9aa0ac;
-  --text-h: #f3f4f6;
-  --bg: #0f1014;
-  --border: #2a2c35;
-  --code-bg: #1a1b22;
-  --accent: #a78bfa;
-  --accent-bg: rgba(167, 139, 250, 0.15);
-  --accent-border: rgba(167, 139, 250, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.5) 0 10px 20px -4px, rgba(0, 0, 0, 0.3) 0 4px 6px -2px;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  min-height: 100vh;
+  font-family: var(--font-sans);
+  color: #374151;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
 }
 
-code {
-  font-family: var(--mono);
-  font-size: 0.9em;
-  padding: 2px 6px;
-  background: var(--code-bg);
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-a {
-  color: var(--accent);
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: var(--color-ink);
+  letter-spacing: -0.015em;
 }
