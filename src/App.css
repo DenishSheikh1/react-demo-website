@@ -23,6 +23,7 @@
   gap: 10px;
   font-weight: 600;
   color: var(--text-h);
+  text-decoration: none;
 }
 .brand-mark {
   color: var(--accent);
@@ -42,9 +43,15 @@
   text-decoration: none;
   font-size: 15px;
   transition: color 0.2s;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
 }
 .nav a:hover {
   color: var(--text-h);
+}
+.nav a.active {
+  color: var(--text-h);
+  border-bottom-color: var(--accent);
 }
 
 .theme-toggle {
@@ -281,6 +288,61 @@ h2 {
 .todo-remove:hover {
   color: var(--text-h);
   background: var(--bg);
+}
+
+.about-hero {
+  padding: 72px 0 32px;
+}
+
+.timeline-section {
+  padding: 48px 0;
+  border-top: 1px solid var(--border);
+}
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.timeline-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--code-bg);
+}
+.timeline-step {
+  font-family: var(--mono);
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-bg);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.timeline-item h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  color: var(--text-h);
+}
+.timeline-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.cta-section {
+  padding: 56px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.cta-section p {
+  margin: 8px 0 20px;
 }
 
 .site-footer {
